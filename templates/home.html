@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Purchase Prediction</title>
+	</head>
+	<body>
+		<h1><div style="text_allign:center"><font color="blue">Predicting the purchase of Car</font></div></h1>
+		<hr>
+		</br>
+		<h2><div style="text_allign:center"><font color="Red">Enter the values in the below form</font></div></h2>
+		</br>
+		<div class='container'>
+			<div class='row'>
+				<div class='col-2'>
+					<form method="POST" action="/predict">
+						<div class="form-group">
+							<label for="Age"><p class="font-weight-bold">Age</p></label>
+							<input type="text" name="Age">
+							<small id="AgeHelp" class="form-text text-muted">Enter the age of that person</small>
+						</div>
+						<div class="form-group">
+                                                       	<label for="Estimated_Salary"><p class="font-weight-bold">Estimated Salary</p></label>
+                                                       	<input type="text" name="Estimated_Salary">
+                                                       	<small id="ESHelp" class="form-text text-muted">Enter the estimated salary of that person</small>
+						</div>
+						<input class='btn btn-primary' type="submit" value="Submit">
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
