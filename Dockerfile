@@ -10,6 +10,6 @@ EXPOSE 5000
 
 ENV NAME OpenToAll
 
-CMD ["python3.6","logistic_regg.py"]
+CMD ["python3.6","ann_image_flask.py"]
 
 

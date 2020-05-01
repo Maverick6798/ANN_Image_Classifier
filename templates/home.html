@@ -4,29 +4,24 @@
 		<title>Purchase Prediction</title>
 	</head>
 	<body>
-		<h1><div style="text_allign:center"><font color="blue">Predicting the purchase of Car</font></div></h1>
+		<h1><div style="text_allign:center"><font color="blue">Predicting the Image</font></div></h1>
 		<hr>
+		<p>This is a DEEP LEARNING ANN MODEL,It is trained for identifying certain type of things* with the accuracy of 50%
 		</br>
-		<h2><div style="text_allign:center"><font color="Red">Enter the values in the below form</font></div></h2>
+		<h2><div style="text_allign:center"><font color="Red">Enter the image below to predict its name</font></div></h2>
 		</br>
 		<div class='container'>
 			<div class='row'>
 				<div class='col-2'>
-					<form method="POST" action="/predict">
-						<div class="form-group">
-							<label for="Age"><p class="font-weight-bold">Age</p></label>
-							<input type="text" name="Age">
-							<small id="AgeHelp" class="form-text text-muted">Enter the age of that person</small>
-						</div>
-						<div class="form-group">
-                                                       	<label for="Estimated_Salary"><p class="font-weight-bold">Estimated Salary</p></label>
-                                                       	<input type="text" name="Estimated_Salary">
-                                                       	<small id="ESHelp" class="form-text text-muted">Enter the estimated salary of that person</small>
-						</div>
-						<input class='btn btn-primary' type="submit" value="Submit">
+					<form method="POST" action="/predict" enctype="multipart/form-data">
+					Select Image to upload:
+					<input type="file" name="file" id="file" accept="image/*"/>               
+					<input class='btn btn-primary' type="submit" value="Upload Image"/>
 					</form>
 				</div>
 			</div>
+			<hr>
+			<h3>*The image should be of any one of the following item only:<font color="Brown">Plane,Car,Truck,Cat,Dog,Frog,Deer,Horse,Ship,Bird</font></h3> 
 		</div>
 	</body>
 </html>
